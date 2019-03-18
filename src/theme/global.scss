@@ -427,7 +427,42 @@ table{
 }
 // Table Css::End
 // Media Css::START
-
+@media (min-width: 768px) and (max-width: 1024px) {
+	.navbar {
+	    position: relative;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	    -ms-flex-align: center;
+	    align-items: center;
+	    -ms-flex-pack: justify;
+	    justify-content: space-between;
+	    padding: .5rem 1rem;
+	}
+	.collapse:not(.show) {
+	    display: none !important;
+	}
+	.navbar-expand-lg .navbar-collapse{
+		display: inherit;
+	}
+	.navbar-expand-lg .navbar-toggler{
+		display: block;
+	}
+     
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+    .navbar-header .collapse, .navbar-toggle {
+        display:block !important;
+    }
+    .navbar-header {
+        float:none;
+    }
+    .page--wrapper{
+	    padding-top: 56px;
+	}
+}
 @media only screen and (max-width: 812px) {
 	.navbar-collapse{
 		background-color: #000000;
