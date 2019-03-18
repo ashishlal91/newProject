@@ -1,0 +1,464 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+/* Let's get this party started */
+ ::-webkit-scrollbar {
+	    width: 5px;
+	    height: 5px;
+	}
+/* Track */
+ ::-webkit-scrollbar-track {     
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+     background: rgba(221, 221, 221, 0.8);
+}
+/* Handle */
+ ::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #B5C9D4;
+    -webkit-box-shadow: inset 0 0 6px #B5C9D4;
+}
+ ::-webkit-scrollbar-thumb:window-inactive {
+    background: #B5C9D4;
+}
+// Bootstarp Overide Css::end
+header{
+	.navbar-toggler{
+		background-color: #fff;
+		border-color: #fff;
+	}
+	.navbar-nav .nav-link{
+	  padding-right: 0px !important;
+	  font-size: 14px;
+	  font-weight: bold;
+	  margin-left: 25px !important;
+	  text-transform: capitalize;
+		text-transform: uppercase;
+	}
+	.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+		color: #ad873d;
+	}
+	.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link
+	{
+		color: #ad873d;
+	}
+	.dropdown-item.active, .dropdown-item:active{
+		background-color: #fff;
+	}
+	.navbar{
+		position: fixed;
+	    top: 0;
+	    z-index: 99;
+	    width: 100%;
+    	background: #fff;
+    	.navbar-brand{
+   		    color: #fff;
+		    text-transform: capitalize;
+		    font-size: 24px;
+		    font-weight: bold;
+    	}
+	}
+	.navbar-light .navbar-nav .nav-link{
+		color: #fff;
+		cursor: pointer;
+	}
+	.navbar-light .navbar-nav .nav-link:hover{
+		color: #ad873d;
+	}
+	.language__section{
+    	margin: 11px 0 5px 0;
+		.language{
+			margin: 0px;
+			padding: 0px;
+			display: flex;
+		    align-items: center;
+		    justify-content: space-between;
+			.active{
+				a{
+					background-color: #ac861b;
+					border-color: #ac861b;
+					color: #fff !important;
+				}
+			}
+			li{
+				display: inline-block;
+			    margin: 0 5px;		
+				a{
+					width: 25px;
+				    height: 25px;
+	 			    border: 1px solid #fff;
+				    border-radius: 50px;
+				    font-size: 10px;
+				    display: flex;
+				    align-items: center;
+				    justify-content: center;
+				}
+			}
+		}
+	}	
+	.dropdown-menu{
+    border-radius: 0;
+		width: 184px; 
+		background-color: #000;
+		border-top: 3px solid #a6937c;
+    .dropdown-item{
+	    font-family: "Open Sans";
+	    font-size: 14px;
+	    font-weight: bold;
+	    color: #a6937c;
+	    padding: 9px 15px;
+    }
+	}	
+}
+// Header Css::end
+// Body Css::Start
+.page--heading{
+    color: #ac861b;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin: 0 auto 0 auto;
+    h1{
+			text-align: center;
+			position: relative;
+		  margin: 50px 30px 50px 30px;
+		  text-transform: uppercase;
+	    font-size: 24px;
+	    font-weight: bold;
+		}
+	&:after,&:before{
+    width: 10%;
+    content: "";
+    position: relative;
+    background: #ac861b;
+    height: 2.3px;	     
+	}
+	&:before{
+	  left: 0px;
+	}
+	&:after{
+	  right: 0px;
+ 	}
+
+}
+.page--wrapper{
+	padding-top: 93px;
+}
+// Footer Css::START
+footer{
+	background-color: #444444;
+	.copyright__text{		
+		p{
+	    font-size: 12px;
+	    font-weight: normal;
+	    font-family: 'Roboto', sans-serif;
+	    color: #fff;
+	    margin: 0;
+	    text-align: center;
+	    padding: 9px 0;
+		}
+	}
+}
+
+
+// Accordian Css::start 
+.accordion { 
+	.card:first-of-type{
+  	border-radius: 3px;
+	}
+	.card{
+	    border: 1px solid #ac861b !important;
+	    width: 100%;
+	    max-width: 1024px;
+	    background-color: #fff;
+	    margin: 0 auto 13px;
+	    border-radius: 3px !important;
+		-webkit-box-shadow: 3px 4px 5px rgba(116,116,116,.3);
+		-moz-box-shadow: 3px 4px 5px rgba(116,116,116,.3);
+		box-shadow: 3px 4px 5px rgba(116,116,116,.3);
+		.accordion__right--icon{
+	    margin: 0 50px;
+			.accordion_plus,.accordion_mins{
+				cursor: pointer;
+				max-width: 100%;
+			}
+			.accordion_mins{
+				display: none;
+			}
+		}		
+		.card-header{
+	    padding: 11px 0px;
+	    display: -webkit-flex;
+	    display: flex;
+	    -webkit-align-items: center;
+	    align-items: center;
+	    justify-content: space-between;
+	    background: transparent;
+	    border: 0;
+			.golf__profile-pic{
+			    width: 53px;
+			    height: 53px;
+			    overflow: hidden;
+			    border-radius: 50px;
+		      margin: 0 40px;
+		      img{
+		      	max-width: 100%;
+		      }
+			}
+			h2,button{
+				font-family: "Open Sans";
+				font-size: 16px;
+				font-weight: bold;
+				color: #515050;
+				text-decoration: none;
+			}
+		}
+		.card-body{
+			padding: 0px;
+			p{
+				font-family: "Open Sans";
+				font-size: 16px;
+				font-weight: bold;
+				color: #515050;
+			}
+			.accordion__body--inner{
+				max-width: 729px;
+				margin: 0 auto;
+			}
+		}		
+	}
+}
+// Accordian Css::end
+// country name section::Start
+.country__name--section{
+    max-width: 1254px;
+    margin: 0 auto;
+	ul{
+	    display: flex;
+	    align-items: center;
+	    justify-content: space-between;
+        padding: 0;
+        .active span{
+        	color: #a6937c;
+        }
+		li{
+			font-family: "Open Sans";
+			font-size: 24px;
+			font-weight: bold;
+			color: #515050;
+			width: 354px;
+			height: 71px;
+		    margin: 0 32px;
+		    border: 2px solid #a6937c;
+	        padding: 0 15px;
+		    display: flex;
+				align-items: center;
+			-webkit-border-radius: 6px;
+			-moz-border-radius: 6px;
+			border-radius: 6px;
+			background-color: #fff;
+			-webkit-box-shadow: 3px 4px 5px rgba(166,147,124,.4);
+			-moz-box-shadow: 3px 4px 5px rgba(166,147,124,.4);
+			box-shadow: 3px 4px 5px rgba(166,147,124,.4);
+			span{
+				display: flex;
+			    align-items: center;
+			    justify-content: center;
+			    width: 100%;
+			}
+			img{
+				max-width: 100%;
+			}
+		}
+	}
+}
+// country name section::End
+
+// Table Css::Start
+.table-striped tbody tr:nth-of-type(odd){
+	width: 1797px;
+	height: 43px;
+	background-color: #fff;
+}
+.table-striped tbody tr:nth-of-type(even){
+    background-color: hsla(33, 19%, 57%, 0.20);
+}
+ 
+table{
+	thead{
+ 		height: 58px;
+		background-color: #a6937c;
+		-webkit-box-shadow: 3px 4px 5px rgba(87,87,87,.3);
+		-moz-box-shadow: 3px 4px 5px rgba(87,87,87,.3);
+		box-shadow: 3px 4px 5px rgba(87,87,87,.3);
+		tr{
+			th{
+				font-family: 'Open Sans';
+				font-size: 16px;
+				font-weight: bold;
+				color: #fff;
+				padding: 18px 25px !important;
+			}
+		}
+	}	 
+	td,th{
+		padding: 18px 0px !important;
+		height: 43px;
+	}
+	tbody{		
+		tr{
+			
+			td{
+				font-family: 'Open Sans';
+				font-size: 16px;
+				color: #515050;
+				padding: 18px 25px;
+			}
+		}
+	}
+	.table__inner{
+		max-width: 98%;
+	    margin: auto;
+	    &:nth-child(1){
+			td{
+				border-top: 0px  !important;
+			}
+		}	
+	    tr{
+	    	padding: 0 0px;
+
+	    	td{
+	    		padding: 0 0px;
+	    	}
+	    }
+	}	
+}
+.table .tbody .list--inner:nth-of-type(odd){
+	background: transparent;
+}
+.table .tbody .list--inner:nth-of-type(even){
+    background-color: hsla(33, 19%, 57%, 0.20);
+}
+.table__section{
+  max-width: 100%;
+  margin-top: 68px;
+}
+.table{ 
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    background-color: #fff;
+    box-shadow: 3px 4px 5px rgba(87, 87, 87, 0.3);   
+	.thead{		
+    width: 100%;
+    display: inline-table;
+		.thead__list{
+			background-color: #a6937c;
+			-webkit-box-shadow: 3px 4px 5px rgba(87,87,87,.3);
+			-moz-box-shadow: 3px 4px 5px rgba(87,87,87,.3);
+			box-shadow: 3px 4px 5px rgba(87,87,87,.3);
+			padding: 0 10px;
+			.list--inner{				
+				.thead__item{
+					font-family: 'Open Sans';
+					font-size: 16px;
+					font-weight: bold;
+					color: #fff;
+					padding-top: 17px;
+    				padding-bottom: 17px;
+ 				}
+			}
+		}
+	}
+	.list--inner{
+		display: flex;
+	    align-items: center;
+	    justify-content: start;
+ 	    border-bottom: 1px solid #ccc;
+	} 
+	.thead__list .thead__item, .tbody__list .tbody__item{
+		display: inline-block;
+	 	min-width: 121px;
+		padding: 17px 15px;
+		&:nth-child(2){
+			width: 350px;
+		}
+		&:nth-child(3){
+			width: 192px;
+		}
+		&:nth-child(5){
+			width: 261px;
+		}
+		&:nth-child(6){
+			width: 108px;
+		}
+		&:nth-child(7){
+			width: 136px;
+		}
+		&:nth-child(8){
+			width: 152px;
+		}
+		&:nth-child(9){
+			width: 226px;
+		}
+	}
+	.tbody{
+    padding-top: 28px;
+    width: 100%;
+    display: inline-table;
+		.tbody__list{
+ 	    margin: 0 10px;
+ 	    .list--inner{	   
+ 	 			.tbody__item{
+					font-family: 'Open Sans';
+					font-size: 16px;
+					color: #515050;
+ 				}
+	    	}
+		}
+	} 
+}
+// Table Css::End
+// Media Css::START
+
+@media only screen and (max-width: 812px) {
+	.navbar-collapse{
+		background-color: #000000;
+	  margin-top: 10px;
+	}	 
+}
+@media only screen and (max-width: 480px) {
+	header {
+		.navbar {
+			.navbar-brand{
+				font-size: 14px;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 767px) {
+	.page--wrapper{
+	    padding-top: 56px;
+	}
+	.page--heading {
+		h1{
+			font-size: 19px;
+		}
+	}
+	.accordion {
+		.card {
+			.card-header{
+				 .golf__profile-pic{
+				 	margin: 0 10px;
+				 }
+			}
+		}
+	}
+}

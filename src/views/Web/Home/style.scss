@@ -1,0 +1,116 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.home__page{
+	header{
+		.navbar{
+			background: transparent;
+		}
+		.active{
+			a{
+				color: #ad873d !important;
+			}
+		}
+		.navbar-light .navbar-brand{
+			color: #fff;
+		}		 
+	}
+	.hero__slider--section{
+		.slider__item{
+			/* background-image: url(/img/home_benner.png); */
+			height: 100vh;
+			background-repeat: no-repeat;
+			width: 100%;
+			background-size: 100%;
+			display: flex;
+			align-items: center;
+			color: #fff;
+			flex-direction: column;
+			justify-content: center;
+			h1{
+				margin-left: -44%;
+			    font-size: 42px;
+			    font-weight: normal;
+		        text-transform: capitalize;
+				font-family: 'Lobster';
+			}	
+			p{
+			    font-size: 18px;
+			    font-weight: normal;
+		        text-transform: capitalize;
+	            margin-left: -190px;
+			    font-family: 'Lobster';
+			}
+		}
+		.slick-dots{
+			bottom: 30px;
+		}
+		.slick-slide{
+			 img{
+			    max-width: 100%;
+    			width: 100%;
+			 }
+		}
+		.slick-slide{
+			height: calc(100vh - 36px);
+
+		}
+		.slick-prev{
+			display: none !important;
+		}
+		.slick-next{
+			display: none !important;
+		}
+		.slick-dots li.slick-active button:before{
+			opacity: 1;
+			color: #ad873d;
+		}
+		.slick-dots li button:before{
+			opacity: 1;
+    		color: white;
+    		font-size: 11px;
+		}
+		.slick-dots {
+			li{
+				margin: 0px;
+			}
+		}
+	}
+}
+// Media Css::START
+@media only screen and (max-width: 1024px) and (min-width: 990px)  {
+	.home__page {
+		header{
+			.navbar {
+			    background: transparent;
+			    flex-direction: column;
+			    align-items: stretch;
+			}
+		}
+		.hero__slider--section {
+			.slider__item {
+			  background-size: cover;
+				h1{
+					margin-left: 0;
+				}
+			}
+		}
+	}	
+}
+
+@media only screen and (max-width: 812px) {	
+	.home__page {
+		.hero__slider--section{
+			.slick-slide{
+			  height: inherit;
+			}
+			 .slider__item{
+			 	background-size: cover;
+				padding: 0 15px;
+			 	h1,p{
+			 		margin: 0px;
+			 	}
+			 }
+		}
+	}
+} 

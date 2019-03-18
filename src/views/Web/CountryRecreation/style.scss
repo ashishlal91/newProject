@@ -1,0 +1,54 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.country__ecreation--page{
+	padding-top: 93px;
+	header{
+		.navbar{
+			background-color: #000;
+		}
+		.active{
+			a{
+				color: #ad873d !important;
+			}
+		}
+		.navbar-light .navbar-brand{
+			color: #fff;
+		}		
+	}
+	// Header Css::end
+	.bewnner__section{
+		.benner_img{
+			max-width: 100%;
+			width: 100%;
+		}
+	}
+	.body__section{
+		background-image: url(/img/backgrond_img.png);
+	    padding-bottom: 65px;
+		p{
+			font-weight: normal;
+			font-size: 16px;			 
+		}
+		 
+	}
+	// Accordian Css::start 
+	.accordion { 	 
+		.card{	   
+			.card-body{
+				.web--link{
+			    margin-top: -10px;
+			    margin-bottom: 45px;
+				}
+ 				p{
+					font-family: "Open Sans";
+					font-size: 16px;
+					font-weight: bold;
+					color: #515050;
+			    margin-bottom: 15px;
+				}				 
+			}		
+		}
+	}
+	// Accordian Css::end
+}

@@ -1,0 +1,135 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.contact__page{
+	header{
+		.navbar{
+			background-color: #000;
+		}
+		.active{
+			a{
+				color: #ad873d !important;
+			}
+		}
+		.navbar-light .navbar-brand{
+			color: #fff;
+		}		
+	}
+	// Header Css::end
+	.map__section{
+		.benner_img{
+			max-width: 100%;
+			width: 100%;
+		}
+	}
+	.body__section{
+		background-image: url(/img/backgrond_img.png);
+	    padding-bottom: 65px;
+		p{
+			font-weight: normal;
+			font-size: 16px;			 
+		}		 
+	}	
+	.form--title{
+		font-family: "Open Sans";
+		font-size: 24px;
+		font-weight: bold;
+		color: #785d27;
+	} 
+	.contact__section{
+		display: flex;
+	    align-items: stretch;
+	    justify-content: space-between;
+	    margin: 43px auto 0 auto;    
+		.contact__address{
+			ul{
+				margin: 0px;
+				padding: 0px;
+				li{
+					display: flex;
+			    margin-bottom: 16px;
+					span{
+				    font-family: "Open Sans";
+						font-size: 18px;
+						font-family: Roboto;
+						font-size: 20px;
+						font-weight: bold;
+						color: #515050;
+					}
+					.address__left{
+					    min-width: 120px;
+					    margin-right: 40px;
+					    display: flex;
+					    align-items: self-end;
+					    justify-content: space-between;
+	    				img{
+	    					margin-right: 10px;
+	    				}   			    
+					}
+					.address__right{
+						width: 100%;
+					    max-width: 232px;
+					    word-break: break-all;
+					}
+				}
+			}
+		}
+		.contact__form{
+			form{
+				label{
+					font-family: "Open Sans";
+					font-size: 14px;
+					font-weight: bold;
+					color: #515050;
+			    text-align: right;
+				}
+				input{
+					width: 401px;
+					height: 39px;
+					border-radius: 0px;
+					border: 2px solid #959595;
+ 					background: transparent;
+				}
+				textarea{
+					width: 401px;
+					border-radius: 0px;
+					border: 2px solid #959595;
+					background: transparent;
+				}
+			}
+		}
+	}
+}
+@media only screen and (max-width: 812px)  {
+	.contact__page {		
+	 	.contact__section{
+			flex-direction: column;
+		}
+		.contact__section {
+			.contact__form {
+				 margin-top: 20px;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 767px)  {
+	.contact__page {		
+    	padding-top: 63px;
+		.contact__section{
+			flex-direction: column;
+		}
+
+		.contact__section {
+			.contact__form {
+				form {
+					label{
+						text-align: left;
+					}
+					input,textarea{
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
